@@ -4,7 +4,7 @@ import * as CANNON from 'cannon-es';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Player } from './Player';
 import { House } from './House';
-import { Tree } from './Tree';
+import { Tree } from './tree';
 import gsap from 'gsap';
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
