@@ -18,26 +18,26 @@ export class Tree {
       this.modelMesh.scale.set(this.scale, this.scale, this.scale);
       info.scene.add(this.modelMesh);
 
-      this.setCannonBody();
+      // this.setCannonBody();
     });
   }
-  setCannonBody() {
-    const shape = new Box(new Vec3(this.width / 2, this.height / 2, this.depth / 2));
-    this.cannonBody = new Body({
-      mass: 1,
-      position: new Vec3(this.x, this.y, this.z),
-      shape,
-    });
+  // setCannonBody() {
+  //   const shape = new Box(new Vec3(this.width / 2, this.height / 2, this.depth / 2));
+  //   this.cannonBody = new Body({
+  //     mass: 1,
+  //     position: new Vec3(this.x, this.y, this.z),
+  //     shape,
+  //   });
 
-    this.cannonBody.quaternion.setFromAxisAngle(
-      new Vec3(0, 1, 0), // y축
-      this.rotationY
-    );
+  //   this.cannonBody.quaternion.setFromAxisAngle(
+  //     new Vec3(0, 1, 0), // y축
+  //     this.rotationY
+  //   );
 
-    this.modelMesh.cannonBody = this.cannonBody;
+  //   this.modelMesh.cannonBody = this.cannonBody;
 
-    this.cannonWorld.addBody(this.cannonBody);
-  }
+  //   this.cannonWorld.addBody(this.cannonBody);
+  // }
 }
 
 // export class Wind {
